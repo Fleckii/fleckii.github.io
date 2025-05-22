@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+<title>Home</title>
+
+<meta charset="UTF-8">
+<style>
+body {
+    background-image: url("band04.jpg");
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Hintergrund ausfüllt */
+    background-position: center; /* Das Bild wird zentriert ausgerichtet */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    background-color: black;
+	background-attachment: fixed;
+	
+	font-family: Arial, Verdana;
+	
+	header a{font-family: Arial, Verdana;font-size:20px; background-color:none; color: white;text-decoration: none;margin-right: 25px}
+	header a:hover{font-family: Arial, Verdana;font-size:23px; background-color:none; color: white;text-decoration: none;margin-right: 25px}
+	header{justify-content: right; align-items: right; text-align: right;  }
+	
+
+	
+	.container { font-family: Arial;
+	font-size:150px;
+	color: white;
+	text-decoration: none;
+	text-decoration: none;
+	text-align:center;}
+	
+	.container{text-align:center;}
+	
+	.menu a { color: white; text-decoration: none;font-size: 40px; text-align:center;}
+	
+	.menu a:hover { background-color: black; color: white; text-decoration: none;font-size: 42px;}
+	
+	.menu {
+    position: fixed; /* Menü wird relativ zum Bildschirm positioniert */
+    top: 0;
+    left: 0;
+    width: 100%; /* Das Menü nimmt die gesamte Bildschirmbreite ein */
+    height: 100%; /* Das Menü nimmt die gesamte Bildschirmhöhe ein */
+    background-color: rgba(0, 0, 0, 0.8); /* Hintergrundfarbe des Menüs */
+    display: none; /* Standardmäßig ausgeblendet */
+	text-align: center;
+	}
+	
+
+.menu.active {
+    display: block;}
+
+.menu-btn {
+    cursor: pointer;}
+
+.line {
+    width: 60px;
+    height: 10px;
+    background-color: white;
+    margin: 10px 0;}
+	
+    }
+		</style>
+</head>
+<body>
+<div class="menu-btn" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+		<br>
+		  
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  
+            <li><a href="site01.html">Band</a></li>
+            <li><a href="site02.html">Mitglieder</a></li>
+            <li><a href="site03.html">Alben</a></li>
+            <li><a href="site05.html">Auszeichnungen</a></li>
+			<li><a href="index.html">zurück</a></li>
+        </ul>
+    </nav>
+<header>
+
+<a href="site01.html">Band          </a>
+<a href="site02.html">Mitglieder          </a>
+<a href="site03.html">Alben         </a>
+<a href="site05.html">Auszeichnungen</a>
+</header>
+
+<div class="container">
+<p>SUNRISE AVENUE</p>
+</div>
+
+
+
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');}
+	
+</script>
+</html>

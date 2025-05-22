@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+<title>Alben</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<script>
+function showText(id) {
+    var text = document.getElementById("text" + id);
+    if (text.style.display === "none") {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none";
+    }
+}
+function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');}
+
+
+</script>
+<style>
+.image-container {
+    position: absolute;
+    width: 1400px;
+    height: 150px;
+    margin-bottom: 20px;
+	float:left;
+}
+
+
+
+.image {
+
+    width: 466px;
+    height: 466px;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.text {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 466px;
+    height: 390px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 80px; /* Anpassen je nach Bedarf */
+}
+</style>
+</head>
+<body>
+<header>
+<header>
+<div class="menu-btn" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+		<br>
+		   <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <li><a href="index.html">Start</a></li>
+            <li><a href="site01.html">Band</a></li>
+            <li><a href="site02.html">Mitglieder</a></li>
+            <li><a href="site03.html">Alben</a></li>
+            <li><a href="site05.html">Auszeichnungen</a></li>
+			<li><a href="site01.html">zurück</a></li>
+        </ul>
+    </nav>
+
+<a href="index.html">Start</a>
+<a href="site01.html">Band</a>
+<a href="site02.html">Mitglieder</a>
+<a href="site03.html">Alben</a>
+<a href="site05.html">Auszeichnungen</a>
+</header>
+<h4>SUNRISE AVENUE - Kontakt</h4>
+<center><h1>Laura Knödler
+<br>
+<br>
+KnoedlerL@werkgymnaisum.de
+</h1></center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+<br>
+<br>
+<a href="impressum.pdf">Impressum</a>
+<a href="site04.html">Kontakt</a>
+</footer>
+</body>
+</html>

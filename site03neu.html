@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+<html>
+<title>Alben</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<style>
+.image-container {
+    width: 466px;
+    height: 466px;
+    margin-bottom: 20px;
+	padding: 25px;
+	float:left;
+	border:1px solid #000;
+
+	}
+.image {
+
+    width: 466px;
+    height: 466px;
+    background-size: cover;
+    cursor: pointer;
+	}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 466px;
+    height: 466px;
+    background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe des Overlays mit Transparenz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Anfangs unsichtbar machen */
+</style>
+</head>
+<body>
+<header>
+<div class="menu-btn" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+		 <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <li><a href="index.html">Start</a></li>
+            <li><a href="site01.html">Band</a></li>
+            <li><a href="site02.html">Mitglieder</a></li>
+            <li><a href="site03.html">Alben</a></li>
+            <li><a href="site05.html">Auszeichnungen</a></li>
+			<li><a href="site03.html">zurück</a></li>
+        </ul>
+    </nav>
+
+<a href="index.html">Start</a>
+<a href="site01.html">Band</a>
+<a href="site02.html">Mitglieder</a>
+<a href="site05.html">Auszeichnungen</a>
+</header>
+
+
+<body>
+<h4>SUNRISE AVENUE - die Alben</h4>
+	
+
+<div class="image-container">
+    <div class="image" style="background-image: url('onthewaytowonderland.jpg');" onclick="showText(1)"></div>
+    <div class="text" id="text1"><h2> On the way to wonderland</h2><br><br>-  Debüt- und Studioalbum <br>-  2006 veröffentlicht<br>-  Fairytale gone bad <br>-  Lied einfügen fairytale gone bad</div>
+</div>
+<div class="image-container">
+    <div class="image" style="background-image: url('acustictour2010.jpg');" onclick="showText(2)"></div>
+    <div class="text" id="text2"><h2>Acustic tour 2010</h2><br><br>-  2010 veröffentlicht<br>-  Livealbum</div>
+</div>
+<div class="image-container">
+    <div class="image" style="background-image: url('outofstyle.jpg');" onclick="showText(3)"></div>
+    <div class="text" id="text3"><h2>Out of style</h2><br><br>-  2011 veröffentlicht<br>-  Hollywood hills, i don’t dance</div>
+</div><br>	
+<div class="image-container">
+    <div class="image" style="background-image: url('unholyground.jpg');" onclick="showText(4)"></div>
+    <div class="text" id="text4"><h2>Unholy ground</h2><br><br>-  2013 veröffentlicht<br>-  Lifesaver, litte bit of love<br>-  Studioalbum</div>
+</div><br>
+<div class="image-container">
+    <div class="image" style="background-image: url('fairytales.jpg');" onclick="showText(5)"></div>
+    <div class="text" id="text5"><h2>Fairytales</h2><br><br>-  2014 veröffentlicht<br>-  Kompilationen<br>-  Best of 2006-2014</div>
+</div><br>	
+<div class="image-container">
+    <div class="image" style="background-image: url('heartbreakcentury.jpg');" onclick="showText(6)"></div>
+    <div class="text" id="text6"><h2>Heartbreak Century</h2><br><br>-  2017 veröffentlicht<br>-  Studioalbum<br>-  Lied Heartbreak century</div>
+</div><br>
+<div class="image-container">
+    <div class="image" style="background-image: url('popgasm.jpg');" onclick="showText(7)"></div>
+    <div class="text" id="text7"><h2>Popgasm</h2><br><br>-  2019 veröffentlicht<br>-  Studioalbum</div>
+</div><br>
+<div class="image-container">
+    <div class="image" style="background-image: url('theverybestof.jpg');" onclick="showText(9)"></div>
+    <div class="text" id="text9"><h2>The very best of</h2><br><br>-  Kompilationen<br>-  2020 veröffentlicht</div>
+</div><br>
+<div class="image-container">
+    <div class="image" style="background-image: url('livewithwonderlandorchestra.jpg');" onclick="showText(8)"></div>
+    <div class="text" id="text8"><h2>Live with a wonderland orchestra</h2><br><br>-  2021 veröffentlicht<br>-  Livealbum</div>
+</div><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br>
+	
+<footer>
+<br>
+<br>
+<a href="impressum.pdf">Impressum</a>
+<a href="site04.html">Kontakt</a>
+</footer>
+
+
+<script>
+const bild = document.getElementById('bild');
+const overlay = document.getElementById('overlay');
+
+bild.addEventListener('click', function() {
+    overlay.style.display = 'flex'; // Overlay anzeigen, wenn Bild angeklickt wird
+});
+function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');}
+
+
+</script>
+</body>
+</html>

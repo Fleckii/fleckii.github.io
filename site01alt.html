@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+<title>Sunrise Avenue</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<script>
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    const offset = -currentSlide * 100;
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+}
+
+function changeSlide(step) {
+    showSlide(currentSlide + step);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});
+</script>
+<style>
+ footer{height: 90px; background-color: #333333; text-align: center; word-spacing: 15px;}
+footer a{color: white; text-align: center; text-decoration: underline; font-size: 20px;}
+
+
+.container {
+        display: flex;
+        align-items: center;
+    }
+	.conatiner image {
+  max-width: 50%;
+  margin-right: 20px; /* Hier wird der Abstand zwischen dem Bild und dem Text festgelegt */
+}
+
+.container p {padding: 20px;
+line-height:30px;
+font-weight:normal;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    max-height: 700px;
+    overflow: hidden;
+    background-color: #000;
+	overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="menu-btn" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+		<br>
+		   <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <li><a href="index.html">Start</a></li>
+            <li><a href="site01.html">Band</a></li>
+            <li><a href="site02.html">Mitglieder</a></li>
+            <li><a href="site03.html">Alben</a></li>
+            <li><a href="site05.html">Auszeichnungen</a></li>
+			<li><a href="site01.html">zurück</a></li>
+        </ul>
+    </nav>
+
+<a href="index.html">Start</a>
+<a href="site02.html">Mitglieder</a>
+<a href="site03.html">Alben</a>
+<a href="site05.html">Auszeichnungen</a>
+</header>
+
+<body>
+
+<h4> SUNRISE AVENUE - die Band</h4>
+<div class="container">
+<img src="logo.png" width="300px" height="150px">
+
+<br>   <br><h1> 
+  <center><p> Sunrise Avenue, eine finnische Rockband, wurde im Jahr 2002 in Espoo gegründet. Die Band entstand aus der Zusammenarbeit von Samu Haber, Jan Hohenthal und Sami Osala, die bereits Erfahrung in verschiedenen Musikprojekten gesammelt hatten. Nach einigen Besetzungswechseln fand die Band schließlich ihre endgültige Formation mit Samu Haber als charismatischem Frontmann und Sänger, Raul Ruutu am Bass, Sami Osala am Schlagzeug und Riku Rajamaa an der Gitarre.
+<br>   <br> 
+   Die Anfänge von Sunrise Avenue waren bescheiden, mit Auftritten in kleinen Clubs und Bars in Finnland. Doch schon bald gewann die Band an Popularität und konnte eine wachsende Fangemeinde um sich versammeln. Der Durchbruch gelang Sunrise Avenue im Jahr 2006 mit dem Album "On the Way to Wonderland". Hits wie "Fairytale Gone Bad" und "Forever Yours" wurden zu Hymnen für die Band und machten sie international bekannt.
+<br>   <br>
+   In den folgenden Jahren tourte Sunrise Avenue weltweit und begeisterte ihr Publikum mit energiegeladenen Live-Auftritten. Die Band veröffentlichte mehrere erfolgreiche Alben, darunter "Popgasm" und "Out of Style", die in den Charts erfolgreich waren und ihnen weitere Hits bescherten.
+<br>    <br>
+   Trotz einiger Besetzungswechsel im Laufe der Jahre blieb Sunrise Avenue eine feste Größe in der europäischen Rockszene und erlangte internationale Bekanntheit. Die Band wurde für ihre eingängigen Songs, mitreißenden Melodien und die charismatische Bühnenpräsenz von Samu Haber geschätzt.
+<br>   <br>
+   Im Jahr 2019 kündigte Sunrise Avenue ihre Auflösung an, nachdem sie eine Abschiedstournee absolviert hatten. Die Bandmitglieder entschieden sich, neue musikalische Wege zu gehen, doch ihr Erbe als eine der erfolgreichsten Rockbands aus Finnland bleibt bestehen. Sunrise Avenue hat sich einen festen Platz in den Herzen vieler Fans weltweit erobert und wird auch weiterhin für ihre mitreißende Musik und ihre leidenschaftlichen Live-Auftritte in Erinnerung bleiben.
+</center>
+
+</h1></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1><br><center><a href="https://sunriseave.bravado.de/"> --> Shop von Sunrise Avenue <-- </a></center><br></h1>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center><div class="carousel">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="slides">
+  <img src="band.jpg" alt="Bild 1" class="slide">
+  <img src="band01.jpg" alt="Bild 2" class="slide">
+  <img src="band02.jpg" alt="Bild 2" class="slide">
+ 
+  <img src="samu-haber-konzert.jpg" alt="Bild 3" class="slide">
+  <img src="sami osala.jpg" alt="Bild 4" class="slide">
+  <img src="riku rajamaa02.jpg" alt="Bild 5" class="slide">
+  <img src="raul ruutu.jpg" alt="Bild 6" class="slide">
+  <img src="logo.png" alt="Bild 7" class="slide">
+   </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</center>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<br>
+<br>
+<a href="impressum.pdf">Impressum</a>
+<a href="site04.html">Kontakt</a>
+</footer>
+<script src="scripts.js">
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    const offset = -currentSlide * 100;
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+}
+
+function changeSlide(step) {
+    showSlide(currentSlide + step);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});
+
+</script>
+<script>
+function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');}
+</script>
+</body>
+</html>

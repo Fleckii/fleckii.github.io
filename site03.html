@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>Alben</title>
+<style>
+.container {
+    position: relative;
+	float:left;
+	 width: 466px;
+    height: 466px;
+	 margin-bottom: 40px;
+	 margin-left:40px;
+	
+	}
+#bild {
+ width: 466px;
+    height: 466px;
+    margin-bottom: 20px;
+	padding: 25px;
+	float:left;
+	border:1px solid #000;
+	position: relative;
+}
+
+#text {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border: 1px solid black;
+    display: none;
+	height:200px;
+	width:300px;
+	justify-content:center;
+	text-align:center;
+	padding-top: 80px;}
+p{font-size:20px; }
+a{font-size:20px; text-decoration:underline;}
+	
+
+#bild:hover + #text {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="menu-btn" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+		 <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <li><a href="index.html">Start</a></li>
+            <li><a href="site01.html">Band</a></li>
+            <li><a href="site02.html">Mitglieder</a></li>
+            <li><a href="site03.html">Alben</a></li>
+            <li><a href="site05.html">Auszeichnungen</a></li>
+			<li><a href="site03.html">zurück</a></li>
+        </ul>
+    </nav>
+
+<a href="index.html">Start</a>
+<a href="site01.html">Band</a>
+<a href="site02.html">Mitglieder</a>
+<a href="site05.html">Auszeichnungen</a>
+</header>
+
+<h4>SUNRISE AVENUE - die Alben</h4>
+<div class="container">
+    <img src="ontheway.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden"> On the way to wonderland<br><br>-  Debüt- und Studioalbum <br>-  2006 veröffentlicht<br> <a href="https://www.youtube.com/watch?v=OUyfQLd3bCs">-  Fairytale gone bad</a></p>
+</div>
+<div class="container">
+    <img src="acustictour2010.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden"> Acustic tour 2010<br><br>-  2010 veröffentlicht<br>-  Livealbum</p>
+</div>
+<div class="container">
+    <img src="outofstyle.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden">Out of style<br><br>-  2011 veröffentlicht<br>-  Hollywood hills, i don’t dance</p>
+</div>
+<div class="container">
+    <img src="unholyground.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden">Unholy ground<br><br>-  2013 veröffentlicht<br>-  Lifesaver, litte bit of love<br>-  Studioalbum</p>
+</div>
+<div class="container">
+    <img src="fairytales.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden">Fairytales<br><br>-  2014 veröffentlicht<br>-  Kompilationen<br>-  Best of 2006-2014</p>
+</div>
+<div class="container">
+    <img src="heartbreakcentury.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden">Heartbreak Century<br><br>-  2017 veröffentlicht<br>-  Studioalbum<br><a href="https://www.youtube.com/watch?v=jbaYUGYOKjQ"> -  Heartbreak Century</a></p>
+</div>
+<div class="container">
+    <img src="popgasm.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden">Popgasm<br><br>-  2019 veröffentlicht<br>-  Studioalbum</p>
+</div>
+<div class="container">
+    <img src="theverybestof.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden">The very best of<br><br>-  Kompilationen<br>-  2020 veröffentlicht</p>
+</div>
+<div class="container">
+    <img src="livewithwonderlandorchestra.jpg" id="bild" alt="Bild">
+    <p id="text" class="hidden">Live with a wonderland orchestra<br><br>-  2021 veröffentlicht<br>-  Livealbum</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br>
+<footer>
+<br>
+<br>
+<a href="impressum.pdf">Impressum</a>
+<a href="site04.html">Kontakt</a>
+</footer>
+<script> const bild = document.getElementById('bild');
+const text = document.getElementById('text');
+
+bild.addEventListener('click', function() {
+    text.classList.toggle('hidden');
+});
+function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');}</script>
+</body>
+</html>
